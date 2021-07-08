@@ -23,6 +23,7 @@ const fetchData = async () => {
       .join('');
     result.innerHTML = products;
   } catch (error) {
+    console.log(error);
     result.innerHTML = '<h4>Error</h4>';
   }
 };
